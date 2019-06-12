@@ -9,279 +9,281 @@
 <body>
 
 
-    <form align="center">
+    <form action="pg2.html">
         <table align='center' border="4">
             <tr>
                 <td width='70%' align='center'>
-                    <h1 align="center">Votação</h1>
+                    <!-- =====================================Votação================================================= -->
 
-                    <!-- =====================================Primeiro Nome=========================================== -->
-
-                    <label for="nome">Primeiro Nome:</label>
-
-                    <br>
-
-                    <input type="text" placeholder="Digite seu primeiro nome" minlength="6" maxlength="100" id="nome" name="nome" required autofocus
-                        autocomplete="on">
-
-                    <br>
-                    <br>
-
-                    <!-- =====================================Segundo nome============================================ -->
-
-                    <label for="Lname">Segundo Nome:</label>
-
-                    <br>
-
-                    <input type="text" placeholder="Digite seu segundo nome" name="Lname" id="Lname" minlength="6" maxlength="100" required autocomplete="on">
-
-                    <br>
-                    <br>
-
-                    <!-- =====================================Nascimento============================================= -->
-
-                    <label for="date">Sua Data de Nascimento:</label>
-
-                    <br>
-                    <br>
-                    <input type="date" name="date" id="date">
-
-                    <br>
-                    <br>
-
-                    <!-- =====================================Email================================================= -->
-
-                    <label for="email">Digite seu Email:</label>
-
-                    <br>
-
-                    <input type="email" placeholder="Digite seu email" name="email" id="email" required autocomplete="on">
-
-                    <br>
-                    <br>
-
-                    <!-- =====================================Telefone============================================= -->
-
-                    <label for="tel">Telefone:</label>
-                    <br>
-                    <input type="tel" name="tel" id="tel" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" placeholder="Formato: 84-95555-2456">
-
-                    <br>
-                    <br>
-
-                    <!-- =====================================Cidade=============================================== -->
-
-                    <label for="cidade">Cidade:</label>
-                    <select name="cidade" id="cidade">
-
-                        <option disabled selected>Selecione...</option>
-                        <option value="ntl">Natal</option>
-
-                    </select>
-
-                    <br>
-                    <br>
-
-                    <!-- =====================================Unidade=============================================== -->
-
-                    <label for="und">Unidade:</label>
-                    <select name="und" id="und">
-
-                        <option disabled selected>Selecione...</option>
-                        <option value="SncAl">Senac Alecrim</option>
-                        <option value="SncZS">Senac Zona Sul</option>
-                        <option value="SncZN">Senac Zona Norte</option>
-                        <option value="SncMciba">Senac Macaiba</option>
-
-                    </select>
-
-                    <br>
-                    <br>
-
-                    <!-- =========================================Informações de votação============================ -->
-
+                    <h1>Votação</h1>
                     <hr>
+                    <br>
+                    <br>
+                    <fieldset>
+                        <legend>Informações pessoais</legend>
+                        <!-- =====================================Primeiro Nome=========================================== -->
 
-                    <h4>Intenção de Votos: </h4>
+                        <label for="nome">Primeiro Nome:</label>
+
+                        <br>
+
+                        <input type="text" placeholder="Digite seu primeiro nome" minlength="6" maxlength="100" id="nome" name="nome" required autofocus
+                            autocomplete="on">
+
+                        <br>
+                        <br>
+
+                        <!-- =====================================Segundo nome============================================ -->
+
+                        <label for="Lname">Segundo Nome:</label>
+
+                        <br>
+
+                        <input type="text" placeholder="Digite seu segundo nome" name="Lname" id="Lname" minlength="6" maxlength="100" required autocomplete="on">
+
+                        <br>
+                        <br>
+
+                        <!-- =====================================Nascimento============================================= -->
+
+                        <label for="date">Sua Data de Nascimento:</label>
+
+                        <br>
+                        <br>
+                        <input type="date" name="date" id="date">
+
+                        <br>
+                        <br>
+
+                        <!-- =====================================Email================================================= -->
+
+                        <label for="email">Digite seu Email:</label>
+
+                        <br>
+
+                        <input type="email" placeholder="Digite seu email" name="email" id="email" required autocomplete="on">
+
+                        <br>
+                        <br>
+
+                        <!-- =====================================Telefone============================================= -->
+
+                        <label for="tel">Telefone:</label>
+                        <br>
+                        <input type="tel" name="tel" id="tel" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" placeholder="Formato: 84-95555-2456">
+
+                        <br>
+                        <br>
+
+                        <!-- =====================================Cidade=============================================== -->
+
+                        <label for="cidade">Cidade:</label>
+                        <select name="cidade" id="cidade">
+
+                            <option disabled selected>Selecione...</option>
+                            <option value="ntl">Natal</option>
+
+                        </select>
+
+                        <br>
+                        <br>
+
+                        <!-- =====================================Unidade=============================================== -->
+
+                        <label for="und">Unidade:</label>
+                        <select name="und" id="und">
+
+                            <option disabled selected>Selecione...</option>
+                            <option value="SncAl">Senac Alecrim</option>
+                            <option value="SncZS">Senac Zona Sul</option>
+                            <option value="SncZN">Senac Zona Norte</option>
+                            <option value="SncMciba">Senac Macaiba</option>
+
+                        </select>
+
+                        <br>
+                        <br>
+                    </fieldset>
 
                     <!-- =====================================Lider================================================= -->
+                    <fieldset>
+                        <legend>Intenção de Voto:</legend>
+                        <label for="ld">Lider:</label>
 
-                    <label for="ld">Lider:</label>
+                        <br>
 
-                    <br>
+                        <table align='center'>
+                            <tr>
+                                <td>
 
-                    <table align='center'>
-                        <tr>
-                            <td>
+                                    <label>
+                                        <input type="radio" name="ld" id="ld" checked> Naziano</label>
+                                </td>
 
-                                <label>
-                                    <input type="radio" name="ld" id="ld" checked> Naziano</label>
-                            </td>
+                                <td>
+                                    <label>
+                                        <input type="radio" name="ld" id="ld">Mateus</label>
+                                </td>
 
-                            <td>
-                                <label>
-                                    <input type="radio" name="ld" id="ld">Mateus</label>
-                            </td>
+                                <td>
+                                    <label>
+                                        <input type="radio" name="ld" id="ld">Caio</label>
+                                </td>
 
-                            <td>
-                                <label>
-                                    <input type="radio" name="ld" id="ld">Caio</label>
-                            </td>
+                                <td>
+                                    <label>
+                                        <input type="radio" name="ld" id="ld">Serafim</label>
+                                </td>
+                            </tr>
+                        </table>
 
-                            <td>
-                                <label>
-                                    <input type="radio" name="ld" id="ld">Serafim</label>
-                            </td>
-                        </tr>
-                    </table>
+                        <br>
+                        <br>
 
-                    <br>
-                    <br>
+                        <!-- =====================================Vice-Lider================================================= -->
 
-                    <!-- =====================================Vice-Lider================================================= -->
+                        <label for="ld">Vice-Lider:</label>
 
-                    <label for="ld">Vice-Lider:</label>
+                        <br>
+                        <br>
 
-                    <br>
-                    <br>
+                        <table align='center'>
+                            <tr>
+                                <td>
+                                    <label>
+                                        <input type="radio" name="vl" id="vl" checked> Adriano</label>
+                                </td>
 
-                    <table align='center'>
-                        <tr>
-                            <td>
-                                <label>
-                                    <input type="radio" name="vl" id="vl" checked> Adriano</label>
-                            </td>
+                                <td>
+                                    <label>
+                                        <input type="radio" name="vl" id="vl">Carlos</label>
+                                </td>
 
-                            <td>
-                                <label>
-                                    <input type="radio" name="vl" id="vl">Carlos</label>
-                            </td>
+                                <td>
+                                    <label>
+                                        <input type="radio" name="vl" id="vl">Fabricio</label>
 
-                            <td>
-                                <label>
-                                    <input type="radio" name="vl" id="vl">Fabricio</label>
+                                </td>
 
-                            </td>
+                                <td>
+                                    <label>
+                                        <input type="radio" name="vl" id="vl">Icaro</label>
+                                </td>
+                            </tr>
+                        </table>
 
-                            <td>
-                                <label>
-                                    <input type="radio" name="vl" id="vl">Icaro</label>
-                            </td>
-                        </tr>
-                    </table>
+                        <br>
+                        <br>
 
-                    <br>
-                    <br>
+                        <!-- =====================================Secretaria================================================= -->
 
-                    <!-- =====================================Secretaria================================================= -->
+                        <label for="sec">Secretaria:</label>
 
-                    <label for="sec">Secretaria:</label>
+                        <br>
+                        <br>
 
-                    <br>
-                    <br>
+                        <table align='center'>
+                            <tr>
+                                <td>
+                                    <label>
+                                        <input type="radio" name="sec" id="sec" checked> Adriana</label>
+                                </td>
 
-                    <table align='center'>
-                        <tr>
-                            <td>
-                                <label>
-                                    <input type="radio" name="sec" id="sec" checked> Adriana</label>
-                            </td>
+                                <td>
+                                    <label>
+                                        <input type="radio" name="sec" id="sec">Paloma</label>
+                                </td>
+                            </tr>
+                        </table>
 
-                            <td>
-                                <label>
-                                    <input type="radio" name="sec" id="sec">Paloma</label>
-                            </td>
-                        </tr>
-                    </table>
+                        <br>
+                        <br>
 
-                    <br>
-                    <br>
+                        <!-- =====================================Humorista================================================= -->
 
-                    <!-- =====================================Humorista================================================= -->
+                        <label for="humo">Humorista:</label>
 
-                    <label for="humo">Humorista:</label>
+                        <br>
+                        <br>
 
-                    <br>
-                    <br>
+                        <table align='center'>
+                            <tr>
+                                <td>
+                                    <label>
+                                        <input type="radio" name="humo" id="humo">Whinderson</label>
+                                </td>
 
-                    <table align='center'>
-                        <tr>
-                            <td>
-                                <label>
-                                    <input type="radio" name="humo" id="humo">Whinderson</label>
-                            </td>
+                                <td>
+                                    <label>
+                                        <input type="radio" name="humo" id="humo">Tiririca</label>
+                                </td>
+                            </tr>
+                        </table>
 
-                            <td>
-                                <label>
-                                    <input type="radio" name="humo" id="humo">Tiririca</label>
-                            </td>
-                        </tr>
-                    </table>
 
-                    <hr>
+                    </fieldset>
 
                     <!-- =====================================Satisfação================================================= -->
 
-                    <h4>Satisfação:</h4>
+                    <fieldset>
+                        <legend>Satisfação</legend>
+                        <label for="nota">Nota de: </label>
+                        0
+                        <input type="range" name="nota" id="nota" min="0" max="5" value="5"> 5
+
+                        <br>
+                        <br>
 
 
-                    <label for="nota">Nota de: </label>
-                    0
-                    <input type="range" name="nota" id="nota" min="0" max="5" value="5"> 5
+                        <label for="gosto">O que voçê mais gosta na sala:</label>
+                        <br>
+                        <label for="selct1">"Pode selecionar mais de 1"</label>
+                        <br>
+                        <br>
+                        <table align='center'>
+                            <tr>
+                                <td>
 
-                    <br>
-                    <br>
+                                    <input type="checkbox" name="gosto" value="cadeira"> Cadeira
+                                    <br>
+                                    <input type="checkbox" name="gosto" value="computador"> Computador
+                                    <br>
+                                    <input type="checkbox" name="gosto" value="ar"> Ar-condicionado
+                                    <br>
+                                    <input type="checkbox" name="gosto" value="proj"> projetor
+                                    <br>
+                                    <input type="checkbox" name="cxsom" id="cxsom"> Caixa de Som
+                                </td>
+                            </tr>
+                        </table>
 
-
-                    <label for="gosto">O que voçê mais gosta na sala:</label>
-                    <br>
-                    <label for="selct1">"Pode selecionar mais de 1"</label>
-                    <br>
-                    <br>
-                    <table align='center'>
-                        <tr>
-                            <td>
-
-                                <input type="checkbox" name="gosto" value="cadeira"> Cadeira
-                                <br>
-                                <input type="checkbox" name="gosto" value="computador"> Computador
-                                <br>
-                                <input type="checkbox" name="gosto" value="ar"> Ar-condicionado
-                                <br>
-                                <input type="checkbox" name="gosto" value="proj"> projetor
-                                <br>
-                                <input type="checkbox" name="cxsom" id="cxsom"> Caixa de Som
-                            </td>
-                        </tr>
-                    </table>
-
-                    <br>
-                    <br>
-
+                        <br>
+                        <br>
+                    </fieldset>
 
                     <!-- =====================================Sugestão================================================= -->
 
-                    <hr>
+                    <fieldset>
+                        <legend>Sugestão</legend>
+                        <br>
 
-                    <h4>Segestão:</h4>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Escreva sua Sugestão..." maxlength="400"></textarea>
+
+                        <br>
+                        <br>
+
+                        <!-- =====================================Botões================================================= -->
+
+                        <br>
+                        <br>
+
+                    </fieldset>
 
                     <br>
-
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Escreva sua Sugestão..." maxlength="400"></textarea>
-
                     <br>
-                    <br>
+                    
+                    <button type="submit">Votar</button>
 
-                    <!-- =====================================Botões================================================= -->
-
-                    <br>
-                    <br>
-
-                    <a href="pg2.html">
-
-                        <button type="button">Votar</button>
-
-                    </a>
 
                     <button type="reset">Resetar</button>
 
